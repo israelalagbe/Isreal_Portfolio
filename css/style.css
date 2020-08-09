@@ -271,7 +271,8 @@ Desktop Styles
     text-align: center;
     margin: 0 auto; }
     .about__child--2 {
-      width: 90%;
+      width: 80%;
+      height: 20em;
       margin-top: 5em; }
   .project__box {
     height: 15em; }
