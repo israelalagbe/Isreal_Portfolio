@@ -260,6 +260,8 @@ Desktop Styles
 @media (max-width: 500px) {
   .header {
     padding: 0.5em 1em; }
+    .header__logo {
+      width: 3em; }
   .landing__header {
     font-size: 2em;
     margin-top: 2em; }
@@ -282,7 +284,7 @@ Desktop Styles
       margin-top: 5em; }
   .project__box {
     margin: 0 auto;
-    width: 60%;
+    width: 80%;
     height: 10em; }
   .footer__con {
     flex-direction: column; }
