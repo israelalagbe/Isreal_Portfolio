@@ -503,6 +503,7 @@ Desktop Styles
   .landing {
     &__header {
       font-size: 2em;
+      margin-top: 3em;
     }
 
     &__paragraph-con {
@@ -510,6 +511,7 @@ Desktop Styles
     }
 
     &__footer {
+      bottom: 6em;
       img {
         margin-right: 1em;
       }
@@ -535,7 +537,7 @@ Desktop Styles
 
   .project {
     &__box {
-      height: 15em;
+      height: 10em;
     }
   }
   .footer {

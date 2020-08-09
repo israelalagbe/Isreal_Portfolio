@@ -259,11 +259,14 @@ Desktop Styles
   .header {
     padding: 0.5em 1em; }
   .landing__header {
-    font-size: 2em; }
+    font-size: 2em;
+    margin-top: 3em; }
   .landing__paragraph-con {
     width: 80%; }
-  .landing__footer img {
-    margin-right: 1em; }
+  .landing__footer {
+    bottom: 6em; }
+    .landing__footer img {
+      margin-right: 1em; }
   .about__con {
     flex-direction: column-reverse; }
   .about__child {
@@ -275,7 +278,7 @@ Desktop Styles
       height: 20em;
       margin-top: 5em; }
   .project__box {
-    height: 15em; }
+    height: 10em; }
   .footer__con {
     flex-direction: column; }
   .footer__child {
