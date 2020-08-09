@@ -390,12 +390,12 @@ Desktop Styles
 
 .project {
   margin-top: 10em;
-  grid-column: 2 / 14;
 
   &__wrapper {
+    margin-top: 3em;
     padding: 2em;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
     color: rgb(0, 0, 0);
     gap: 4em;
   }
@@ -485,6 +485,8 @@ Desktop Styles
       padding-left: 1em;
     }
     &-message {
+      font-family: $primary-font;
+      resize: none;
       height: 10em;
     }
     &-submit {
@@ -503,7 +505,7 @@ Desktop Styles
   .landing {
     &__header {
       font-size: 2em;
-      margin-top: 3em;
+      margin-top: 2em;
     }
 
     &__paragraph-con {
@@ -511,7 +513,7 @@ Desktop Styles
     }
 
     &__footer {
-      bottom: 6em;
+      bottom: 8em;
       img {
         margin-right: 1em;
       }
@@ -519,6 +521,7 @@ Desktop Styles
   }
 
   .about {
+    
     &__con {
       flex-direction: column-reverse;
     }
@@ -526,6 +529,7 @@ Desktop Styles
       width: 100%;
       text-align: center;
       margin: 0 auto;
+      font-size: 0.8em;
 
       &--2 {
         width: 80%;
@@ -537,6 +541,8 @@ Desktop Styles
 
   .project {
     &__box {
+      margin: 0 auto;
+      width: 60%;
       height: 10em;
     }
   }

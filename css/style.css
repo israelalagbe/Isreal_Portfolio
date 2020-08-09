@@ -189,12 +189,12 @@ Desktop Styles
     margin-top: 4em; }
 
 .project {
-  margin-top: 10em;
-  grid-column: 2 / 14; }
+  margin-top: 10em; }
   .project__wrapper {
+    margin-top: 3em;
     padding: 2em;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
     color: black;
     gap: 4em; }
   .project__box {
@@ -248,6 +248,8 @@ Desktop Styles
     margin-bottom: 2em;
     padding-left: 1em; }
   .footer__form-message {
+    font-family: "Oxygen";
+    resize: none;
     height: 10em; }
   .footer__form-submit {
     width: 10em;
@@ -260,11 +262,11 @@ Desktop Styles
     padding: 0.5em 1em; }
   .landing__header {
     font-size: 2em;
-    margin-top: 3em; }
+    margin-top: 2em; }
   .landing__paragraph-con {
     width: 80%; }
   .landing__footer {
-    bottom: 6em; }
+    bottom: 8em; }
     .landing__footer img {
       margin-right: 1em; }
   .about__con {
@@ -272,12 +274,15 @@ Desktop Styles
   .about__child {
     width: 100%;
     text-align: center;
-    margin: 0 auto; }
+    margin: 0 auto;
+    font-size: 0.8em; }
     .about__child--2 {
       width: 80%;
       height: 20em;
       margin-top: 5em; }
   .project__box {
+    margin: 0 auto;
+    width: 60%;
     height: 10em; }
   .footer__con {
     flex-direction: column; }
