@@ -1,6 +1,7 @@
 let menu = document.querySelector(".header__menu");
 let navbar = document.querySelector(".header__middle");
 let close = document.querySelector(".header__close");
+let link = document.querySelector(".header__link");
 
 AOS.init();
 
@@ -16,16 +17,26 @@ menu.addEventListener("click", function(e) {
 
 close.addEventListener("click", function(e) {
   if (e.target.className === "header__close") {
-    navbar.animate(
-      [{ transform: "translateY(0px)" }, { transform: "translateY(-2000px)" }],
-      {
-        duration: 500
-      },
-
-      "linear"
-    );
-    setTimeout(function() {
-      navbar.style.display = "none";
-    }, 500);
+    closeMenu()
   }
 });
+
+navbar.addEventListener("click", function(e) {
+  if (e.target.className === "header__link") {
+    closeMenu()
+  }
+});
+
+let closeMenu = function(){
+  navbar.animate(
+    [{ transform: "translateY(0px)" }, { transform: "translateY(-2000px)" }],
+    {
+      duration: 500
+    },
+
+    "linear"
+  );
+  setTimeout(function() {
+    navbar.style.display = "none";
+  }, 500);
+}

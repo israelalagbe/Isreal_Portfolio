@@ -50,10 +50,18 @@ Base Styles
   list-style: none;
   text-decoration: none; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   background-color: #000;
   color: #ffff;
   font-family: "Open Sans";
+  width: 100%; }
+
+.head {
+  background: url(/images/background.png) no-repeat center center;
+  background-size: contain;
   width: 100%; }
 
 .heading {
@@ -74,13 +82,12 @@ Desktop Styles
   top: 0;
   z-index: 3;
   display: flex;
-  padding: 0.5em 2em;
+  padding: 1em 2em;
   justify-content: space-between; }
   .header__logo {
-    width: 5em; }
+    width: 3em; }
   .header__menu {
-    width: 2.5em;
-    padding-top: 1em; }
+    width: 2.5em; }
   .header__middle {
     position: absolute;
     position: fixed;
@@ -199,17 +206,22 @@ Desktop Styles
     gap: 4em; }
   .project__box {
     height: 20em;
+    border-radius: .5em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     position: relative;
-    padding: 2em; }
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-blend-mode: screen;
+    background-size: cover;
+    object-fit: contain; }
     .project__box:nth-child(1) {
-      background: linear-gradient(180deg, #dbb4f3, #efb7d7); }
+      background-image: url(/images/riby.PNG); }
     .project__box:nth-child(2) {
-      background-image: radial-gradient(circle at 43.84% 120.44%, #ff7f33 0, #ff6d3c 16.67%, #ff5a42 33.33%, #f94646 50%, #e53348 66.67%, #d3204a 83.33%, #c20b4d 100%); }
+      background-image: url(/images/eachone.PNG); }
     .project__box:nth-child(3) {
-      background-image: linear-gradient(180deg, #30ffff 0, #4be2ff 25%, #53bcf2 50%, #5298c2 75%, #4c7796 100%); }
+      background-image: url(/images/skooleo.PNG); }
   .project__link {
     align-self: flex-end;
     display: flex;
@@ -257,11 +269,11 @@ Desktop Styles
     border: none;
     color: #707070; }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .header {
     padding: 0.5em 1em; }
     .header__logo {
-      width: 3em; }
+      width: 2em; }
   .landing__header {
     font-size: 2em;
     margin-top: 2em; }
