@@ -50,57 +50,59 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
-    <header class="header">
-      <div class="header__left">
-        <a href="#"
-          ><img src="icons/logo.svg" alt="Logo" class="header__logo"
-        /></a>
-      </div>
-      <div class="header__middle">
-        <img
-          src="icons/close-black.svg"
-          alt="Close Icon"
-          class="header__close"
-        />
-        <ul>
-          <li>
-            <a>
-              <img src="icons/logo-black.svg" alt="Logo" class="header__logo"
-            /></a>
-          </li>
-          <li><a href="#about" class="header__link">About</a></li>
-          <li><a href="#project" class="header__link">My Projects</a></li>
-          <li><a href="#footer" class="header__link">Contact</a></li>
-        </ul>
-      </div>
-      <div class="header__right">
-        <img src="icons/menu.svg" alt="Menu Icon" class="header__menu" />
-      </div>
-    </header>
-    <section class="landing">
-      <h1 class="landing__header animated bounceInLeft">
-        <span>Hi,</span> I'm Isreal
-      </h1>
-      <div class="landing__paragraph-con">
-        <p class="landing__paragraph animated jello">
-          A Fullstack Software Engineer, with over 4 years experiences building
-          functional and scalable products and has worked extensively on both
-          the front-end and back-end aspects of web applications using several
-          technologies.
-        </p>
-      </div>
-      <div class="landing__footer animated fadeInDown">
-        <img
-          src="icons/facebook.svg"
-          alt="Facebook Icon"
-          class="footer__icon"
-        />
-        <img src="icons/twitter.svg" alt="Twitter Icon" />
-        <img src="icons/github.png" alt="Github Icon" />
-        <img src="icons/medium.svg" alt="Medium Icon" />
-      </div>
+    <section class="head">
+      <header class="header">
+        <div class="header__left">
+          <a href="#"
+            ><img src="icons/logo.svg" alt="Logo" class="header__logo"
+          /></a>
+        </div>
+        <div class="header__middle">
+          <img
+            src="icons/close-black.svg"
+            alt="Close Icon"
+            class="header__close"
+          />
+          <ul>
+            <li>
+              <a>
+                <img src="icons/logo-black.svg" alt="Logo" class="header__logo"
+              /></a>
+            </li>
+            <li><a href="#about" class="header__link">About</a></li>
+            <li><a href="#project" class="header__link">My Projects</a></li>
+            <li><a href="docs/AlagbeIsrealCV.pdf" download class="header__link">My Resume</a></li>
+            <li><a href="#footer" class="header__link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="header__right">
+          <img src="icons/menu.svg" alt="Menu Icon" class="header__menu" />
+        </div>
+      </header>
+      <section class="landing">
+        <h1 class="landing__header animated bounceInLeft">
+          <span>Hi,</span> I'm Isreal
+        </h1>
+        <div class="landing__paragraph-con">
+          <p class="landing__paragraph animated jello">
+            A Fullstack Software Engineer, with over 4 years experiences
+            building functional and scalable products and has worked extensively
+            on both the front-end and back-end aspects of web applications using
+            several technologies.
+          </p>
+        </div>
+        <div class="landing__footer animated fadeInDown">
+          <img
+            src="icons/facebook.svg"
+            alt="Facebook Icon"
+            class="footer__icon"
+          />
+          <img src="icons/twitter.svg" alt="Twitter Icon" />
+          <img src="icons/github.png" alt="Github Icon" />
+          <img src="icons/medium.svg" alt="Medium Icon" />
+        </div>
+      </section>
     </section>
-    
     <section class="about" id="about">
       <h1 class="heading about__heading"><span>About Me</span></h1>
       <div class="about__con">
@@ -137,7 +139,7 @@
         <span>Stuff I’ve worked on</span>
       </h2>
       <div class="project__wrapper">
-        <div class="project__box">
+        <div class="project__box riby">
           <div class="project__link">
             <a href="https://riby.me" target="_blank"
               ><img src="/icons/link.svg" alt="link icon"
@@ -147,17 +149,17 @@
             <h3 class="project__details">Riby</h3>
           </div>
         </div>
-        <div class="project__box">
+        <div class="project__box eachone">
           <div class="project__link">
             <a href="https://eachone.ng" target="_blank"
               ><img src="/icons/link.svg" alt="link icon"
             /></a>
           </div>
           <div class="project__content">
-            <h3 class="heading-3 mb-l">Each One</h3>
+            <h3 class="heading-3 mb-l">EachOne</h3>
           </div>
         </div>
-        <div class="project__box">
+        <div class="project__box skooleo">
           <div class="project__link">
             <a href="https://skooleeo.com" target="_blank"
               ><img src="/icons/link.svg" alt="link icon"
@@ -167,8 +169,10 @@
             <h3 class="heading-3 mb-l">Skooleeo</h3>
           </div>
         </div>
-        
       </div>
+      <section class="modal-section">
+       
+      </section>
     </section>
     <footer class="footer" id="footer">
       <h1 class="heading footer__heading"><span>Contact Me</span></h1>
@@ -214,7 +218,10 @@
               class="footer__form-email footer__form-input"
               placeholder="Email"
             />
-            <textarea class="footer__form-input footer__form-message" placeholder="Your Message"></textarea>
+            <textarea
+              class="footer__form-input footer__form-message"
+              placeholder="Your Message"
+            ></textarea>
             <input type="submit" class="footer__form-submit" />
           </form>
         </div>
