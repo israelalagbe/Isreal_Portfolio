@@ -28,6 +28,14 @@ Animations
   100% {
     transform: rotate(0); } }
 
+@keyframes bounce {
+  0% {
+    transform: translateX(-1em); }
+  50% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(-1em); } }
+
 @keyframes opacity {
   0% {
     opacity: 0; }
@@ -174,7 +182,8 @@ Desktop Styles
         transform: translateY(-2px); }
   .landing__icon {
     width: 2em;
-    position: absolute; }
+    position: absolute;
+    animation: bounce 20s ease infinite; }
     .landing__icon--1 {
       top: 5em;
       right: 4em; }
@@ -373,6 +382,12 @@ Desktop Styles
     border: none;
     color: #707070; }
 
+/* ---------
+
+Media Queries
+
+
+-------*/
 @media (max-width: 768px) {
   .header {
     padding: 0.5em 1em; }

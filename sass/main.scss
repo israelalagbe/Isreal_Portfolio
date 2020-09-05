@@ -52,6 +52,19 @@ Animations
     transform: rotate(0);
   }
 }
+@keyframes bounce {
+  0% {
+    transform: translateX(-1em);
+  }
+
+  50% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-1em);
+  }
+}
 
 @keyframes opacity {
   0% {
@@ -244,11 +257,7 @@ body {
   font-family: $secondary-font;
   width: 100%;
 }
-// .head {
-//   // background: url(/images/background.png) no-repeat center center;
-//   // background-size: contain;
-//   // width: 100%;
-// }
+
 
 .heading {
   font-family: $primary-font;
@@ -330,6 +339,8 @@ Desktop Styles
   }
 }
 
+//Landing Styles
+
 .landing {
   position: relative;
   height: 80vh;
@@ -380,6 +391,7 @@ Desktop Styles
   &__icon {
     width: 2em;
     position: absolute;
+    animation: bounce 20s ease infinite;
     &--1 {
       top: 5em;
       right: 4em;
@@ -406,6 +418,9 @@ Desktop Styles
     }
   }
 }
+
+
+//About Styles
 
 .about {
   margin-top: 10em;
@@ -449,6 +464,9 @@ Desktop Styles
     margin-top: 4em;
   }
 }
+
+
+//Project Styles
 
 .project {
   margin-top: 10em;
@@ -498,6 +516,8 @@ Desktop Styles
     width: 2em;
   }
 }
+
+//Modal Styles
 
 .modal {
   position: fixed;
@@ -593,6 +613,9 @@ Desktop Styles
   }
 }
 
+
+//Footer Styles
+
 .footer {
   margin-top: 10em;
   margin-bottom: 3em;
@@ -645,6 +668,14 @@ Desktop Styles
   }
 }
 
+
+/* ---------
+
+Media Queries
+
+
+-------*/
+
 @media (max-width: 768px) {
   .header {
     padding: 0.5em 1em;
@@ -673,13 +704,11 @@ Desktop Styles
       &--3 {
         top: 30em;
         left: 10em;
-    }
-    &--6 {
-      top: 0;
-      left: 10em;
-  }
-  
-    
+      }
+      &--6 {
+        top: 0;
+        left: 10em;
+      }
     }
   }
 
