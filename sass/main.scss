@@ -244,11 +244,11 @@ body {
   font-family: $secondary-font;
   width: 100%;
 }
-.head {
-  // background: url(/images/background.png) no-repeat center center;
-  // background-size: contain;
-  // width: 100%;
-}
+// .head {
+//   // background: url(/images/background.png) no-repeat center center;
+//   // background-size: contain;
+//   // width: 100%;
+// }
 
 .heading {
   font-family: $primary-font;
@@ -375,6 +375,34 @@ Desktop Styles
         filter: invert(20%) sepia(3%) blur(0.5px);
         transform: translateY(-2px);
       }
+    }
+  }
+  &__icon {
+    width: 2em;
+    position: absolute;
+    &--1 {
+      top: 5em;
+      right: 4em;
+    }
+    &--2 {
+      bottom: 5em;
+      left: 4em;
+    }
+    &--3 {
+      top: 9em;
+      left: 6em;
+    }
+    &--4 {
+      top: 20em;
+      left: 20em;
+    }
+    &--5 {
+      bottom: 20em;
+      right: 20em;
+    }
+    &--6 {
+      top: 2em;
+      left: 20em;
     }
   }
 }
@@ -640,6 +668,18 @@ Desktop Styles
       img {
         margin-right: 1em;
       }
+    }
+    &__icon {
+      &--3 {
+        top: 30em;
+        left: 10em;
+    }
+    &--6 {
+      top: 0;
+      left: 10em;
+  }
+  
+    
     }
   }
 

@@ -172,6 +172,27 @@ Desktop Styles
       .landing__footer img:hover, .landing__footer img:active {
         filter: invert(20%) sepia(3%) blur(0.5px);
         transform: translateY(-2px); }
+  .landing__icon {
+    width: 2em;
+    position: absolute; }
+    .landing__icon--1 {
+      top: 5em;
+      right: 4em; }
+    .landing__icon--2 {
+      bottom: 5em;
+      left: 4em; }
+    .landing__icon--3 {
+      top: 9em;
+      left: 6em; }
+    .landing__icon--4 {
+      top: 20em;
+      left: 20em; }
+    .landing__icon--5 {
+      bottom: 20em;
+      right: 20em; }
+    .landing__icon--6 {
+      top: 2em;
+      left: 20em; }
 
 .about {
   margin-top: 10em; }
@@ -366,6 +387,12 @@ Desktop Styles
     bottom: 3em; }
     .landing__footer img {
       margin-right: 1em; }
+  .landing__icon--3 {
+    top: 30em;
+    left: 10em; }
+  .landing__icon--6 {
+    top: 0;
+    left: 10em; }
   .about__con {
     flex-direction: column-reverse; }
   .about__child {
