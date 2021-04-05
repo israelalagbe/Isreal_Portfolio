@@ -88,8 +88,11 @@ let closeMenu = function () {
 };
 
 projectWrapper.addEventListener("click", function (e) {
+  console.log(e.target.classList)
   if (e.target.classList.contains("project__box")) {
+    
     if (e.target.classList.contains("riby")) {
+      
       let modalContent = `
       <div class="modal">
       <p class="modal__close">
@@ -98,7 +101,7 @@ projectWrapper.addEventListener("click", function (e) {
       <div class="modal__body">
       <div class="modal__image-con">
      
-      <img class="modal__image" src="images/riby.PNG"/>
+      <img class="modal__image" src="/images/agent.png"/>
       </div>
           
         <div class="modal__info">
@@ -224,7 +227,6 @@ console.log($$('.landing__icon--6').getCss('top'))
 
 function onParticleLoaded() {
   const color = "#f00";
-  console.log("djdj")
   
   tsParticles.load("tsparticles",{
     "autoPlay": true,
