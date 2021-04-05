@@ -48,9 +48,20 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TEX8RD69NQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-TEX8RD69NQ');
+    </script>
   </head>
   <body>
+    <div id="tsparticles"></div>
     <section class="head">
+      
       <header class="header">
         <div class="header__left">
           <a href="#"
@@ -79,16 +90,18 @@
           <img src="icons/menu.svg" alt="Menu Icon" class="header__menu" />
         </div>
       </header>
+      
       <section class="landing">
+        
         <h1 class="landing__header animated bounceInLeft">
-          <span>Hi,</span> I'm Isreal
+          <span>Hi,</span> I'm Israel
         </h1>
         <div class="landing__paragraph-con">
           <p class="landing__paragraph animated jello">
-            A Fullstack Software Engineer, with over 4 years experiences
-            building functional and scalable products and has worked extensively
+            A Fullstack Software Engineer, with over 5 years of professional experience
+            building functional and scalable products. I've worked extensively
             on both the front-end and back-end aspects of web applications using
-            several technologies.
+            several technologies and can handle an entire project development lifecycle from start to finish.
           </p>
         </div>
         <div class="landing__footer animated fadeInDown">
@@ -101,16 +114,17 @@
           <img src="icons/github.png" alt="Github Icon" />
           <img src="icons/medium.svg" alt="Medium Icon" />
         </div>
-        <img src="icons/1.svg" alt="" class="landing__icon landing__icon--1">
+      </section>
+
+      <img src="icons/1.svg" alt="" class="landing__icon landing__icon--1">
         <img src="icons/2.svg" alt="" class="landing__icon landing__icon--2">
         <img src="icons/3.svg" alt="" class="landing__icon landing__icon--3">
         <img src="icons/4.svg" alt="" class="landing__icon landing__icon--4">
         <img src="icons/5.svg" alt="" class="landing__icon landing__icon--5">
         <img src="icons/6.svg" alt="" class="landing__icon landing__icon--6">
-      </section>
     </section>
     <section class="about" id="about">
-      <h1 class="heading about__heading"><span>About Me</span></h1>
+      <!-- <h1 class="heading about__heading"><span>About Me</span></h1> -->
       <div class="about__con">
         <div class="about__child">
           <p
@@ -123,7 +137,7 @@
             development experience, who has worked extensively on both the
             front-end and back-end aspect of web applications using Angular,
             React, Laravel, and Node.<br />
-            Also knowledgeable in unit testing, continuous
+            Also knowledgeable in automated testing, continuous
             integration/continuous deployment(CI/CD) and cloud hosting. I am
             passionate about Software Development and I have worked with a
             series of exciting companies and amazing clients. Some of them
@@ -136,16 +150,18 @@
           data-aos-easing="linear"
           data-aos-duration="700"
         >
-          <img src="images/headshot.png" alt="" class="about__image" />
+          <img src="images/israel.jpg" alt="" class="about__image" />
         </div>
       </div>
     </section>
     <section class="project" id="project">
       <h2 class="heading project__heading">
-        <span>Stuff I’ve worked on</span>
+        <span>My Projects</span>
       </h2>
       <div class="project__wrapper">
         <div class="project__box riby">
+          <div class="project__image"></div>
+          <div class="project__overlay"></div>
           <div class="project__link">
             <a href="https://riby.me" target="_blank"
               ><img src="/icons/link.svg" alt="link icon"
@@ -156,6 +172,8 @@
           </div>
         </div>
         <div class="project__box eachone">
+          <div class="project__image"></div>
+          <div class="project__overlay"></div>
           <div class="project__link">
             <a href="https://eachone.ng" target="_blank"
               ><img src="/icons/link.svg" alt="link icon"
@@ -166,6 +184,8 @@
           </div>
         </div>
         <div class="project__box skooleo">
+          <div class="project__image"></div>
+          <div class="project__overlay"></div>
           <div class="project__link">
             <a href="https://skooleeo.com" target="_blank"
               ><img src="/icons/link.svg" alt="link icon"
@@ -185,9 +205,9 @@
       <div class="footer__con">
         <div class="footer__child footer__child--1">
           <p class="footer__paragraph">
-            I'm currently available for freelance opportunities. You're welcome
-            to contact me for coffee to. Reach me through my mail and any of my
-            social media handles
+            I'm currently open to job opportunities. You're welcome
+            to contact me for coffee too. Reach me through the contact form or any of my
+            social media handles.
           </p>
           <div class="footer__icon-con">
             <img
@@ -213,18 +233,24 @@
           </div>
         </div>
         <div class="footer__child footer__chold--2">
-          <form action="" class="footer__form">
+          <form action="https://formspree.io/f/xyylyerq" class="footer__form" id="contactForm" method="POST" target="_blank">
             <input
+              required
+              name="name"
               type="text"
               class="footer__form-name footer__form-input"
               placeholder="Your Name"
             />
             <input
+            required
+              name="email"
               type="email"
               class="footer__form-email footer__form-input"
               placeholder="Email"
             />
             <textarea
+            required
+              name="message"
               class="footer__form-input footer__form-message"
               placeholder="Your Message"
             ></textarea>
@@ -235,5 +261,6 @@
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/index.js"></script>
+    <script onload="onParticleLoaded()" src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.25.0/tsparticles.min.js" integrity="sha512-2BfZ4oaKTDUwW+xysJUCEt681NP41iXfQgc7FrCoq1AxAOLQ0d/yCBOvO+FotBbABTPn7ICa3GhlJ6w/+xa/jA==" crossorigin="anonymous" async></script>
   </body>
 </html>
