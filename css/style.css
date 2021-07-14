@@ -515,17 +515,9 @@ Desktop Styles
   z-index: 1;
   opacity: 0.3;
   pointer-events: none;
+  background: rgba(0, 0, 0, 0.863);
 }
 
-.project__box:nth-child(1n) .project__overlay{
-  background: blue;
-}
-.project__box:nth-child(2n) .project__overlay{
-  background: green;
-}
-.project__box:nth-child(3n) .project__overlay{
-  background: red;
-}
 
 .project__box:nth-child(1) .project__image {
   background-image: url(/images/agent.png);
@@ -817,4 +809,23 @@ Media Queries
  
   z-index: -400;
 
+}
+
+.arrow {
+  display: block;
+  margin: auto;
+  margin-top: 5rem;
+  box-sizing: border-box;
+  height: 3vw;
+  width: 3vw;
+  border-style: solid;
+  border-color: white;
+  border-width: 0px 1px 1px 0px;
+  transform: rotate(45deg);
+  transition: border-width 150ms ease-in-out;
+}
+
+.arrow:hover {
+  border-bottom-width: 4px;
+  border-right-width: 4px;
 }
